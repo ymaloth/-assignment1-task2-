@@ -1,9 +1,48 @@
 <html>
     <head>
-        <title>A1 Task2</title>
+        <title>Instagarm</title>
+         <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
     <body>
-        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">Insta</i></a>
-    <button>+</button>
     </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram</title>
+        <link rel="stylesheet" herf="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    </Head>
+    <style>
+      img{
+          height:250px;
+          border-radius: 10px;
+          box-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+          margin:10px;
+      }  
+    </style>
+    <body>
+        <div class="container">
+            <br><br>
+            <h1 style="text-align:center">Instagram</h1>
+            <br><br>
+            <form id="form" enctype="multipart/form-data"method="post">
+                <div class="form-group">
+                    <input type="file" class="form-control" id="image">
+                </div>
+                <div class="form-group">
+
+                    <button class="btn btn-primary">upload</button>
+            </form>
+            <button onclick="remove()" class="btn btn-danger">Remove</button>
+            <div id="result"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
